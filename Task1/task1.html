@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="p1.jpg" class="logo" width="100" height="100"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="index.html">Account</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h1 >RESUMAKE</h1>
+                <h2><br></h2>
+                <h3>Receive Resume Readymade</h3>
+                <p>Hello! Wanna get ready your resume along with CV in just a click.<br>
+                    Don't worry you came to correct place.<br>
+                    We windup your Resume And CV within a click.<br>
+                    All you need to do is to fill the necessary details.<br>
+                    BOOM your Resume is ready.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                    <img src="p2.jpg" class="template" width="500" height="500">
+            </div>
+        </div>
+        <ul class="temp">
+            <li><img src="p3.jpg" width="100" height="100" onclick="changeCircleColor('#00704A');imgSlider('temp1.png')"></li>
+            <li><img src="p4.jpg" width="100" height="100" onclick="changeCircleColor('#1595d3');imgSlider('temp2.png')"></li>
+            <li><img src="p5.jpg" width="100" height="100" onclick="changeCircleColor('#f9c000');imgSlider('temp3.png')"></li>
+            <li><h3>+50 MORE TEMPLATES</h3></li>
+        </ul>
+    </section>
+    <section>
+        <div class="circl"></div>
+        <div class="cr">
+            <a href="D:\Desktop\OasisInfobyte\Task_1\index.html">Create Resume</a>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function changeCircleColor(color){ 
+            const circle = document.querySelector('.circle'); 
+            circle.style.background = color;
+        }
+        function imgSlider(anything){
+            document.querySelector('.imgbox').src = anything;
+        }
+    </script>
+</body>
+</html>
